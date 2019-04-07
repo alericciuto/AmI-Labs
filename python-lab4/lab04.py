@@ -3,8 +3,8 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 from telegram import ChatAction
 import pymysql
 
-MySQLpassword = ""
-MyTocken = ""
+MySQLpassword = "root"
+MyTocken = "805046786:AAHo3KxnawJv-w4ePjSxt0ORYZWdfAOZGoY"
 
 def showTasks(bot, update):
     bot.sendChatAction(update.message.chat_id, ChatAction.TYPING)
