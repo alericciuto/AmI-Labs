@@ -25,7 +25,10 @@ def delete(id_task):
 @app.route('/insert', methods=["POST"])
 def insert():
     task = request.form["text_task"]
-    db_interaction.add_task(task)
+    urgent = False
+    if request.form.get("urgent", "") != "":
+        urgent = True
+    db_interaction.add_task(task, urgent)
     return redirect("index")
 
 

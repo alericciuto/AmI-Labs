@@ -10,19 +10,19 @@ def import_tasks():
     file = open("task_list.txt", "r")
     tasks = file.read().splitlines()
     file.close()
-    sql_insert = "INSERT INTO tasks(todo) VALUES (%s)"
+    sql_insert = "INSERT INTO tasks(todo, urgent) VALUES (%s, %s)"
     for t in tasks:
-        cursor.execute(sql_insert, (t,))
+        cursor.execute(sql_insert, (t, True,))
     connection.commit()
     cursor.close()
     connection.close()
 
 
-def add_task(task):
-    sql = "INSERT INTO tasks(todo) VALUES (%s)"
+def add_task(task, urgent):
+    sql = "INSERT INTO tasks(todo, urgent) VALUES (%s, %s)"
     connection = pymysql.connect(user='root', password='root', database='task_list', host='localhost')
     cursor = connection.cursor()
-    cursor.execute(sql, (task, ))
+    cursor.execute(sql, (task, urgent, ))
     connection.commit()
     cursor.close()
     connection.close()

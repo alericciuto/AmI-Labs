@@ -15,8 +15,12 @@
     </ul>
 
     <form action="{{ url_for('insert') }}" method="post">
-        <p>Insert a new task: <input type="text" name="text_task">
-        <input type="submit" value="Enter">
+        <p>
+            Insert a new task: <input type="text" name="text_task"/>
+            <input type="submit" value="Enter"/>
+        </p>
+        <p>
+            Urgent: <input type="checkbox" name="urgent"/>
         </p>
     </form>
 

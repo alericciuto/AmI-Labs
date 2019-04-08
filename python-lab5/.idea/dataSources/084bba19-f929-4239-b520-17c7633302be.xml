@@ -24231,290 +24231,296 @@ customer_id</ColNames>
       <DataType>char(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="4449" parent="660" name="PRIMARY">
+    <column id="4449" parent="660" name="urgent">
+      <Position>3</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="4450" parent="660" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id_task</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="4450" parent="661" name="description">
+    <column id="4451" parent="661" name="description">
       <Position>1</Position>
       <DataType>char(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="4451" parent="661" name="urgent">
+    <column id="4452" parent="661" name="urgent">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="4452" parent="662" name="id">
+    <column id="4453" parent="662" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="4453" parent="662" name="course">
+    <column id="4454" parent="662" name="course">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="4454" parent="662" name="grade">
+    <column id="4455" parent="662" name="grade">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="4455" parent="662" name="user_id">
+    <column id="4456" parent="662" name="user_id">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="4456" parent="662" name="exams_users_id_fk">
+    <index id="4457" parent="662" name="exams_users_id_fk">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="4457" parent="662" name="PRIMARY">
+    <key id="4458" parent="662" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="4458" parent="662" name="exams_users_id_fk">
+    <foreign-key id="4459" parent="662" name="exams_users_id_fk">
       <ColNames>user_id</ColNames>
       <RefSchemaName>user_exams</RefSchemaName>
       <RefTableName>users</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="4459" parent="663" name="id">
+    <column id="4460" parent="663" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="4460" parent="663" name="username">
+    <column id="4461" parent="663" name="username">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="4461" parent="663" name="password">
+    <column id="4462" parent="663" name="password">
       <Position>3</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="4462" parent="663" name="name">
+    <column id="4463" parent="663" name="name">
       <Position>4</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="4463" parent="663" name="surname">
+    <column id="4464" parent="663" name="surname">
       <Position>5</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="4464" parent="663" name="users_username_uindex">
+    <index id="4465" parent="663" name="users_username_uindex">
       <ColNames>username</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="4465" parent="663" name="PRIMARY">
+    <key id="4466" parent="663" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="4466" parent="663" name="users_username_uindex">
+    <key id="4467" parent="663" name="users_username_uindex">
       <ColNames>username</ColNames>
       <UnderlyingIndexName>users_username_uindex</UnderlyingIndexName>
     </key>
-    <column id="4467" parent="664" name="ID">
+    <column id="4468" parent="664" name="ID">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="4468" parent="664" name="Name">
+    <column id="4469" parent="664" name="Name">
       <Position>2</Position>
       <DataType>char(35)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="4469" parent="664" name="CountryCode">
+    <column id="4470" parent="664" name="CountryCode">
       <Position>3</Position>
       <DataType>char(3)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="4470" parent="664" name="District">
+    <column id="4471" parent="664" name="District">
       <Position>4</Position>
       <DataType>char(20)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="4471" parent="664" name="Population">
+    <column id="4472" parent="664" name="Population">
       <Position>5</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>0</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="4472" parent="664" name="CountryCode">
+    <index id="4473" parent="664" name="CountryCode">
       <ColNames>CountryCode</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="4473" parent="664" name="PRIMARY">
+    <key id="4474" parent="664" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="4474" parent="664" name="city_ibfk_1">
+    <foreign-key id="4475" parent="664" name="city_ibfk_1">
       <ColNames>CountryCode</ColNames>
       <RefSchemaName>world</RefSchemaName>
       <RefTableName>country</RefTableName>
       <RefColNames>Code</RefColNames>
     </foreign-key>
-    <column id="4475" parent="665" name="Code">
+    <column id="4476" parent="665" name="Code">
       <Position>1</Position>
       <DataType>char(3)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="4476" parent="665" name="Name">
+    <column id="4477" parent="665" name="Name">
       <Position>2</Position>
       <DataType>char(52)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="4477" parent="665" name="Continent">
+    <column id="4478" parent="665" name="Continent">
       <Position>3</Position>
       <DataType>enum(&apos;Asia&apos;, &apos;Europe&apos;, &apos;North America&apos;, &apos;Africa&apos;, &apos;Oceania&apos;, &apos;Antarctica&apos;, &apos;South America&apos;)|0e</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;Asia&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="4478" parent="665" name="Region">
+    <column id="4479" parent="665" name="Region">
       <Position>4</Position>
       <DataType>char(26)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="4479" parent="665" name="SurfaceArea">
+    <column id="4480" parent="665" name="SurfaceArea">
       <Position>5</Position>
       <DataType>float(10,2 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>0.00</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="4480" parent="665" name="IndepYear">
+    <column id="4481" parent="665" name="IndepYear">
       <Position>6</Position>
       <DataType>smallint(6)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="4481" parent="665" name="Population">
+    <column id="4482" parent="665" name="Population">
       <Position>7</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>0</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="4482" parent="665" name="LifeExpectancy">
+    <column id="4483" parent="665" name="LifeExpectancy">
       <Position>8</Position>
       <DataType>float(3,1 digit)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="4483" parent="665" name="GNP">
+    <column id="4484" parent="665" name="GNP">
       <Position>9</Position>
       <DataType>float(10,2 digit)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="4484" parent="665" name="GNPOld">
+    <column id="4485" parent="665" name="GNPOld">
       <Position>10</Position>
       <DataType>float(10,2 digit)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="4485" parent="665" name="LocalName">
+    <column id="4486" parent="665" name="LocalName">
       <Position>11</Position>
       <DataType>char(45)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="4486" parent="665" name="GovernmentForm">
+    <column id="4487" parent="665" name="GovernmentForm">
       <Position>12</Position>
       <DataType>char(45)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="4487" parent="665" name="HeadOfState">
+    <column id="4488" parent="665" name="HeadOfState">
       <Position>13</Position>
       <DataType>char(60)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="4488" parent="665" name="Capital">
+    <column id="4489" parent="665" name="Capital">
       <Position>14</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="4489" parent="665" name="Code2">
+    <column id="4490" parent="665" name="Code2">
       <Position>15</Position>
       <DataType>char(2)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="4490" parent="665" name="PRIMARY">
+    <key id="4491" parent="665" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Code</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="4491" parent="666" name="CountryCode">
+    <column id="4492" parent="666" name="CountryCode">
       <Position>1</Position>
       <DataType>char(3)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="4492" parent="666" name="Language">
+    <column id="4493" parent="666" name="Language">
       <Position>2</Position>
       <DataType>char(30)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="4493" parent="666" name="IsOfficial">
+    <column id="4494" parent="666" name="IsOfficial">
       <Position>3</Position>
       <DataType>enum(&apos;T&apos;, &apos;F&apos;)|0e</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;F&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="4494" parent="666" name="Percentage">
+    <column id="4495" parent="666" name="Percentage">
       <Position>4</Position>
       <DataType>float(4,1 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>0.0</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="4495" parent="666" name="CountryCode">
+    <index id="4496" parent="666" name="CountryCode">
       <ColNames>CountryCode</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="4496" parent="666" name="PRIMARY">
+    <key id="4497" parent="666" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>CountryCode
 Language</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="4497" parent="666" name="countryLanguage_ibfk_1">
+    <foreign-key id="4498" parent="666" name="countryLanguage_ibfk_1">
       <ColNames>CountryCode</ColNames>
       <RefSchemaName>world</RefSchemaName>
       <RefTableName>country</RefTableName>
