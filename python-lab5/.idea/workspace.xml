@@ -48,11 +48,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+            <state relative-caret-position="221">
+              <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
               <folding>
                 <element signature="e#0#68#0" expanded="true" />
               </folding>
@@ -80,10 +80,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db_interaction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
+            <state relative-caret-position="618">
               <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
             </state>
           </provider>
@@ -113,8 +113,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="750" />
-    <option name="width" value="1179" />
+    <option name="x" value="811" />
+    <option name="width" value="1115" />
     <option name="height" value="1039" />
   </component>
   <component name="ProjectView">
@@ -250,18 +250,18 @@
       <workItem from="1554732680606" duration="4522000" />
       <workItem from="1554801858185" duration="119000" />
       <workItem from="1555064975705" duration="692000" />
-      <workItem from="1555327891223" duration="532000" />
+      <workItem from="1555327891223" duration="1235000" />
+      <workItem from="1555338235093" duration="243000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13943000" />
+    <option name="totallyTimeSpent" value="14889000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="600" y="0" width="943" height="831" extended-state="0" />
-    <editor active="true" />
+    <frame x="649" y="0" width="892" height="831" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26892656" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18944845" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32956153" />
@@ -311,8 +311,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+        <state relative-caret-position="221">
+          <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
           <folding>
             <element signature="e#0#68#0" expanded="true" />
           </folding>
@@ -337,7 +337,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db_interaction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
+        <state relative-caret-position="618">
           <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
         </state>
       </provider>
