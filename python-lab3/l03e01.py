@@ -16,7 +16,7 @@ def showTasks(bot, update):
 
 def newTask(bot, update, args):
     bot.sendChatAction(update.message.chat_id, ChatAction.TYPING)
-    newTask = "".join(args)
+    newTask = " ".join(args)
     tasks.append(newTask)
     update.message.reply_text(newTask + "\n- INSERTED -")
 
@@ -24,7 +24,7 @@ def newTask(bot, update, args):
 def removeTask(bot, update, args):
     bot.sendChatAction(update.message.chat_id, ChatAction.TYPING)
     if len(tasks) > 0:
-        text = "".join(args)
+        text = " ".join(args)
         if text in tasks:
             tasks.remove(text)
             update.message.reply_text(text + "\n- REMOVED -")
@@ -37,7 +37,7 @@ def removeTask(bot, update, args):
 def removeAllTasks(bot, update, args):
     bot.sendChatAction(update.message.chat_id, ChatAction.TYPING)
     if len(tasks) > 0:
-        text = "".join(args)
+        text = " ".join(args)
         for t in tasks:
             if text in t:
                 tasks.remove(t)

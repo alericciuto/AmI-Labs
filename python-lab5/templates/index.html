@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Todo List Manager</title>
+    <script src="{{ url_for('static', filename="todoscript.js") }}"></script>
 </head>
 <body>
-    <h1>Welcome to the Todo List Manager</h1>
+    <h1 onclick="clickTitle()">Welcome to the Todo List Manager</h1>
     <p>Here you can see all existing tasks:</p>
 
     <ul>
         {% for t in tasks %}
-        <li>{{ t[1] }} <a href="{{ url_for('delete', id_task=t[0]) }}">Delete</a></li>
+        <li>{{ t[1] }} <a href="{{ url_for('delete', id_task=t[0]) }}"
+                          onmouseover="warnOnDelete(this)"
+                          onmouseout="clearWarning()">Delete</a></li>
         {% endfor %}
     </ul>
+
+    <div id="warning"></div>
 
     <form action="{{ url_for('insert') }}" method="post">
         <p>

@@ -22,7 +22,7 @@ def showTasks(bot, update):
 def newTask(bot, update, args):
     bot.sendChatAction(update.message.chat_id, ChatAction.TYPING)
     newTask = " ".join(args)
-    cursor.execute(insert, (newTask,))
+    cursor.execute(insert, (newTask, True, ))
     connection.commit()
     update.message.reply_text(newTask + "\n- INSERTED -")
 
@@ -81,9 +81,9 @@ if __name__ == "__main__":
     cursor = connection.cursor()
     delete = "delete from tasks"
     cursor.execute(delete)
-    insert = "insert into tasks(todo) values (%s)"
+    insert = "insert into tasks(todo, urgent) values (%s, %s)"
     for t in tasks:
-        cursor.execute(insert, (t,))
+        cursor.execute(insert, (t, True, ))
     connection.commit()
 
     updater = Updater(token=MyTocken)
