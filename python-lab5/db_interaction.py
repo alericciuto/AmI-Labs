@@ -2,7 +2,6 @@ import pymysql
 
 
 def import_tasks():
-    # modifiche
     sql_delete = "DELETE FROM tasks"
     connection = pymysql.connect(user='root', password='root', database='task_list', host='localhost')
     cursor = connection.cursor()
@@ -43,7 +42,6 @@ def get_all_tasks():
 
 
 def remove_task(id_task):
-    # modifiche
     sql = "DELETE FROM tasks WHERE id_task=(%s)"
     connection = pymysql.connect(user='root', password='root', database='task_list', host='localhost')
     cursor = connection.cursor()
@@ -59,4 +57,3 @@ if __name__ == '__main__':
     print(get_all_tasks())
     add_task("book summer holidays")
     print(get_all_tasks())
-    # modifiche
