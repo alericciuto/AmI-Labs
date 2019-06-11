@@ -24,7 +24,9 @@ def add_task(task, urgent):
     connection = pymysql.connect(user='root', password='root', database='task_list', host='localhost')
     cursor = connection.cursor()
     cursor.execute(sql, (task, urgent, ))
+    # questo commento è per prova
     connection.commit()
+    # questo commento è per prova
     cursor.close()
     connection.close()
 
