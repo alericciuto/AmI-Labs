@@ -2,7 +2,6 @@ import pymysql
 
 
 def import_tasks():
-    # modifiche
     sql_delete = "DELETE FROM tasks"
     connection = pymysql.connect(user='root', password='root', database='task_list', host='localhost')
     cursor = connection.cursor()
